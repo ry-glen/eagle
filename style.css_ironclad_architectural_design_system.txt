@@ -1,0 +1,87 @@
+/* 
+  IRONCLAD ARCHITECTURAL - Eagle Concrete Coatings LLC 
+  Custom Design System Stylesheet
+*/
+
+:root {
+  /* Color Palette - "Forge & Flag" Red, Blue, White */
+  --primary-blue: #002868;
+  --primary-red: #D21034;
+  --pure-white: #FFFFFF;
+  --slate-dark: #1A1C1E;
+  --slate-light: #F1F4F9;
+  
+  /* Typography */
+  --font-headlines: 'Space Grotesk', sans-serif;
+  --font-body: 'Public Sans', sans-serif;
+  
+  /* Spacing & Borders */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --container-max: 1280px;
+}
+
+/* Global Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--slate-dark);
+  line-height: 1.6;
+  background-color: var(--pure-white);
+}
+
+/* Headings */
+h1, h2, h3, h4, .brand-font {
+  font-family: var(--font-headlines);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--primary-blue);
+}
+
+/* Components */
+.btn-primary {
+  background-color: var(--primary-red);
+  color: var(--pure-white);
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b00e2b;
+}
+
+.nav-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 600;
+  font-family: var(--font-headlines);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--primary-red);
+}
+
+/* Layout Utilities */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.bg-industrial {
+  background-color: var(--slate-light);
+  border-top: 4px solid var(--primary-blue);
+}

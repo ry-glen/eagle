@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "slate": {
+                "50": "#f8fafc",
+                "100": "#f1f5f9",
+                "200": "#e2e8f0",
+                "300": "#cbd5e1",
+                "400": "#94a3b8",
+                "500": "#64748b",
+                "600": "#475569",
+                "700": "#334155",
+                "800": "#1e293b",
+                "900": "#0f172a",
+                "950": "#020617"
+              },
+              "blue": {
+                "50": "#eff6ff",
+                "400": "#60a5fa",
+                "700": "#1d4ed8",
+                "800": "#1e40af",
+                "900": "#1e3a8a"
+              },
+              "red": {
+                "400": "#f87171",
+                "500": "#ef4444",
+                "600": "#dc2626",
+                "900": "#7f1d1d"
+              }
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Public Sans", "sans-serif"],
+                    "body": ["Public Sans", "sans-serif"],
+                    "label": ["Public Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .before-after-slider {
+            position: relative;
+            overflow: hidden;
+        }
+        /* Custom clip for using parts of the long screenshot as individual images */
+        .ba-image-1 {
+            object-position: center 23.5%;
+        }
+        .ba-image-2 {
+            object-position: center 26.5%;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-body text-slate-900">
+<!-- TopAppBar -->
+<header class="bg-white dark:bg-slate-950 border-b-2 border-blue-800 dark:border-blue-900 shadow-md sticky top-0 z-50 transition-all">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="text-xl font-black text-red-600 dark:text-red-500 italic uppercase tracking-tighter">
+                Eagle Concrete Coatings LLC
+            </div>
+<nav class="hidden md:flex items-center space-x-8 font-sans tracking-tight font-semibold">
+<a class="text-blue-700 dark:text-blue-400 font-bold hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200" href="/index.html">Home</a>
+<a class="text-slate-700 dark:text-slate-300 font-medium hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200" href="/services.html">Services</a>
+<a class="text-slate-700 dark:text-slate-300 font-medium hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200" href="/reviews.html">Reviews</a>
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-red-600 font-bold hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200" href="#">Gallery</a>
+<a class="text-slate-700 dark:text-slate-300 font-medium hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200" href="/request-quote.html">Request Quote</a>
+<a class="text-slate-700 dark:text-slate-300 font-medium hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200" href="/about-us.html">About Us</a>
+<a class="text-slate-700 dark:text-slate-300 font-medium hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200" href="/login.html">Login</a>
+</nav>
+<button class="bg-blue-700 text-white px-6 py-2 rounded font-bold uppercase tracking-widest active:scale-95 transition-transform hover:bg-blue-800" onclick="window.location.href='../request%20a%20quote/request.html'">
+                Get Quote
+            </button>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative bg-slate-900 text-white overflow-hidden py-24 md:py-32">
+<div class="absolute inset-0 z-0 opacity-40">
+<div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&amp;fit=crop&amp;q=80&amp;w=2070')] bg-cover bg-center" data-alt="Close-up of polished architectural concrete floor with reflections and industrial textures in a modern setting"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-blue-900/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1 bg-red-600 text-white font-bold text-xs uppercase tracking-[0.2em] mb-6">Gallery Showcase</span>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-black font-headline leading-none italic mb-8 uppercase tracking-tighter">
+                        FORGED IN <span class="text-blue-400">TRANSFORMATION</span>
+</h1>
+<p class="text-xl md:text-2xl text-slate-300 font-light max-w-xl">
+                        Witness the evolution of ordinary surfaces into high-performance, industrial-strength works of art.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Residential Section -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 group">
+<div class="relative overflow-hidden rounded-xl shadow-2xl">
+<img alt="Garage Floor Transformation Before and After" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ugipWf7SPaJTq9N6sYtwdgwGmvOj_q6efYz7j-zo_vM3oe0enqYwNoxuMXtGEnpEkUUOfguWsixxhRAoG1Kfw7w1xMDkohMTOUpb1lEx7sWzHaZa2cOq9ohmBGDg9LnBzSYROELyMQhBZ7RtU3YpLRurU1IZCJ1msa_IACFtI8kR-MvJ3NqUsEZS36jAtj9gvxzdHdx4YzZWDAPbVykicKzRWMbIt8SlIbyfOk9fEGNMGiUsvNC06RDSx2F"/>
+<div class="absolute bottom-6 left-6 bg-red-600 text-white px-4 py-2 font-black italic uppercase text-sm">Residential Case Study</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-6">
+<h2 class="text-4xl font-black text-slate-900 leading-tight uppercase font-headline">Residential <span class="text-blue-700">Transformations</span></h2>
+<div class="h-1.5 w-24 bg-red-600"></div>
+<p class="text-lg text-slate-600 leading-relaxed">
+                            Elevate your living space from mundane to magnificent. Our residential solutions bridge the gap between heavy-duty durability and aesthetic excellence.
+                        </p>
+<div class="bg-slate-50 p-6 border-l-4 border-blue-700 rounded-r-lg">
+<h3 class="font-bold text-blue-900 mb-2 uppercase tracking-wide">The Project</h3>
+<p class="text-slate-700">
+                                This typical suburban garage suffered from deep oil stains and micro-cracking. We installed our signature **Polyurea Chip System**, providing a chemical-resistant finish that's as stunning as it is strong.
+                            </p>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 font-bold text-slate-800">
+<span class="material-symbols-outlined text-red-600" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Slip-Resistant Texture
+                            </li>
+<li class="flex items-center gap-3 font-bold text-slate-800">
+<span class="material-symbols-outlined text-red-600" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Lifetime Adhesion Warranty
+                            </li>
+<li class="flex items-center gap-3 font-bold text-slate-800">
+<span class="material-symbols-outlined text-red-600" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                1-Day Installation Available
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Industrial Section -->
+<section class="py-24 bg-slate-50 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 lg:order-2 space-y-6">
+<h2 class="text-4xl font-black text-slate-900 leading-tight uppercase font-headline">Service <span class="text-red-600">Excellence</span></h2>
+<div class="h-1.5 w-24 bg-blue-700"></div>
+<p class="text-lg text-slate-600 leading-relaxed">
+                            For facilities and homeowners that demand perfection. Our high-performance coatings are engineered for maximum impact and abrasion resistance.
+                        </p>
+<div class="bg-white p-6 border-l-4 border-red-600 rounded-r-lg shadow-sm">
+<h3 class="font-bold text-red-900 mb-2 uppercase tracking-wide">Full Floor Makeover</h3>
+<p class="text-slate-700">
+                                Our professional teams deliver exceptional results with industry-leading materials. From stairs to expansive garage floors, we ensure a pristine finish that lasts for years.
+                            </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-blue-900 text-white p-4 rounded-lg text-center">
+<div class="text-3xl font-black italic">100%</div>
+<div class="text-xs uppercase font-bold tracking-tighter opacity-80">UV Stable</div>
+</div>
+<div class="bg-slate-800 text-white p-4 rounded-lg text-center">
+<div class="text-3xl font-black italic">HD</div>
+<div class="text-xs uppercase font-bold tracking-tighter opacity-80">Traffic Rated</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 lg:order-1 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-700/10 rounded-full blur-3xl"></div>
+<div class="relative overflow-hidden rounded-xl shadow-2xl border-8 border-white">
+<img alt="Complete Floor Makeover Before and After" class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhpY-PrPXr-pohzc_WGepS90NtywBOmB3v1vpUNYFPwnsW1gexTI3zalaUYw1gmDzEhpLEryI6KqMxyY2E2wML1S5Q5Ur1IsXa80zyWgwwNEhFJZpwClvsu7X_CBCHqHs8q8sD5YVe447RXgFgGF40qRthw-4keHeHvYkuNbPFqw3R-BFjnSm7-m5ldIoJhvBlUxQKJEykl1V1Lb9v9ZulIrP1nqB4fky-sKeLc-tWzBvGg1WF24V9JtsM"/>
+<div class="absolute top-6 right-6 bg-blue-700 text-white px-4 py-2 font-black italic uppercase text-sm">Professional Grade</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-red-600 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<h2 class="text-4xl md:text-6xl font-black text-white italic uppercase tracking-tighter mb-8 leading-none">
+                    Ready to forge <br/>your new floor?
+                </h2>
+<p class="text-xl text-red-100 mb-12 font-medium">
+                    Schedule your on-site estimate today and see why Eagle is the gold standard in concrete protection.
+                </p>
+<button class="group bg-blue-900 hover:bg-slate-950 text-white px-10 py-5 rounded-lg text-xl font-black uppercase tracking-widest transition-all shadow-xl hover:shadow-2xl active:scale-95 flex items-center gap-4 mx-auto" onclick="window.location.href='/request-quote.html'">
+                    REQUEST YOUR TRANSFORMATION
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 dark:bg-black w-full py-12 border-t border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto space-y-4 md:space-y-0">
+<div class="text-lg font-bold text-red-500 font-headline italic uppercase">Eagle Concrete Coatings LLC</div>
+<div class="text-slate-400 text-sm font-light text-center max-w-md">
+                © 2024 Eagle Concrete Coatings LLC. Industrial strength protection for your floors.
+            </div>
+<nav class="flex space-x-6">
+<a class="text-slate-400 text-sm font-light hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-400 text-sm font-light hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-400 text-sm font-light hover:text-white transition-colors" href="#">FAQ</a>
+</nav>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 shadow-[0_-4px_10px_rgba(0,0,0,0.1)] z-50 rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-lg py-1 px-3 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="photo_library" style="font-variation-settings: 'FILL' 1;">photo_library</span>
+<span class="text-[11px] font-bold uppercase mt-1">Gallery</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="construction">construction</span>
+<span class="text-[11px] font-bold uppercase mt-1">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="text-[11px] font-bold uppercase mt-1">Reviews</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="text-[11px] font-bold uppercase mt-1">Contact</span>
+</a>
+</nav>
+</body></html>

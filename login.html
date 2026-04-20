@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login | Eagle Concrete Coatings LLC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#dbe4ed",
+                    "on-primary": "#ffffff",
+                    "surface": "#ffffff",
+                    "on-tertiary-fixed-variant": "#3f484f",
+                    "on-tertiary-fixed": "#141d23",
+                    "tertiary-container": "#242d34",
+                    "secondary-fixed": "#dae2ff",
+                    "surface-tint": "#D21034",
+                    "on-primary-fixed": "#400009",
+                    "on-background": "#002868",
+                    "surface-container-highest": "#e0e3e8",
+                    "surface-variant": "#e0e3e8",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#002868",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c4c6d2",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#bfc8d0",
+                    "secondary": "#002868",
+                    "primary-fixed": "#ffdad9",
+                    "surface-container": "#f1f4f9",
+                    "primary": "#D21034",
+                    "inverse-on-surface": "#eef1f6",
+                    "primary-fixed-dim": "#ffb3b3",
+                    "on-secondary-fixed": "#001946",
+                    "primary-container": "#002868",
+                    "secondary-container": "#e0e7ff",
+                    "on-secondary-fixed-variant": "#274484",
+                    "on-secondary-container": "#002868",
+                    "outline": "#747781",
+                    "on-tertiary-container": "#8b949d",
+                    "surface-bright": "#ffffff",
+                    "background": "#ffffff",
+                    "on-primary-fixed-variant": "#920121",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#f1f4f9",
+                    "surface-dim": "#d7dadf",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#2d3135",
+                    "secondary-fixed-dim": "#b1c5ff",
+                    "on-surface-variant": "#444650",
+                    "surface-container-low": "#f7f9ff",
+                    "inverse-primary": "#ffb3b3",
+                    "on-primary-container": "#D21034",
+                    "tertiary": "#10181f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blueprint-grid {
+            background-image: linear-gradient(to right, rgba(0, 40, 104, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 40, 104, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .editorial-shadow {
+            box-shadow: 0 32px 64px -12px rgba(0, 40, 104, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Auth Layout Wrapper -->
+<main class="flex-grow flex relative overflow-hidden">
+<!-- Background Blueprint Pattern -->
+<div class="absolute inset-0 blueprint-grid pointer-events-none"></div>
+<!-- Left Visual Panel (Desktop Only) -->
+<div class="hidden lg:flex w-1/2 relative bg-[#002868] overflow-hidden items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img alt="Close-up of a high-gloss polished industrial concrete floor" class="w-full h-full object-cover opacity-30 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5GfpA2vVAwD4kX7U99azLZhXTJqgQSBJkkuwj_q7biNRK8FeqR_xznw9SkhJbAgZBb19HQ-TxVZPDX3kXyONH5ftA9OKpXVym6VOM8bA7C8O48rT4_auq7A5LDvyV7XNR4OamQ-DS7QS0Vq3CK953ItJRNh4in-eLrcVTJ1vjWee0Vu-Rtnqg0KFz2VzQquiWhopPMAn81mjTG2aP8diCf5DnE0SxMoStMHhgUbkPoR9Qv3JM-pSCpUCyA6WXETKmxhxriwiX69Cg"/>
+</div>
+<div class="relative z-10 p-24 max-w-2xl">
+<h1 class="font-headline text-display-lg text-white font-black tracking-tighter leading-none mb-8 text-7xl uppercase">
+                    Eagle <br/>Concrete
+                </h1>
+<p class="font-body text-white/80 text-lg max-w-md opacity-90 leading-relaxed border-l-2 border-[#D21034] pl-6">
+                    Access the portal for high-precision coatings, industrial-grade finishes, and architectural floor engineering.
+                </p>
+<!-- Editorial Detail -->
+<div class="mt-16 flex gap-12 items-center">
+<div>
+<span class="block font-headline text-2xl text-white font-bold">24/7</span>
+<span class="block font-label text-xs uppercase tracking-widest text-white/60">Global Monitoring</span>
+</div>
+<div class="w-px h-12 bg-white/20"></div>
+<div>
+<span class="block font-headline text-2xl text-white font-bold">AES-256</span>
+<span class="block font-label text-xs uppercase tracking-widest text-white/60">Encrypted Access</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Login Panel -->
+<div class="w-full lg:w-1/2 flex items-center justify-center p-8 md:p-16 relative bg-white z-20">
+<div class="w-full max-w-md">
+<!-- Navigation -->
+<nav class="mb-8 flex justify-center gap-4 text-xs uppercase tracking-widest font-bold text-slate-500">
+<a href="/index.html" class="hover:text-[#002868] transition-colors">Home</a>
+<a href="/services.html" class="hover:text-[#002868] transition-colors">Services</a>
+<a href="/reviews.html" class="hover:text-[#002868] transition-colors">Reviews</a>
+<a href="/before-after.html" class="hover:text-[#002868] transition-colors">Gallery</a>
+<a href="/request-quote.html" class="hover:text-[#002868] transition-colors">Request Quote</a>
+<a href="/about-us.html" class="hover:text-[#002868] transition-colors">About Us</a>
+<a href="#" class="text-[#002868]">Login</a>
+</nav>
+<!-- Logo & Back Link -->
+<div class="mb-12 flex justify-between items-center lg:hidden">
+<span class="font-headline text-xl font-black tracking-tighter text-[#002868] uppercase">Eagle Concrete</span>
+</div>
+<!-- Form Header -->
+<header class="mb-10">
+<div class="inline-block px-2 py-1 mb-4 bg-slate-100 rounded-sm">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] font-bold text-[#002868]">Secured Connection</span>
+</div>
+<h2 class="font-headline text-4xl font-bold text-[#002868] tracking-tight mb-3">Operator Login</h2>
+<p class="text-slate-500 text-sm font-medium">Enter your credentials to access the secure industrial console.</p>
+</header>
+<!-- Login Form -->
+<form class="space-y-6">
+<!-- Email Field -->
+<div class="group">
+<label class="block font-label text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-2 ml-1" for="email">Email Address</label>
+<div class="relative">
+<input class="w-full bg-slate-50 border-slate-200 border rounded-sm px-4 py-4 text-[#002868] placeholder:text-slate-400 focus:ring-1 focus:ring-[#002868] focus:border-[#002868] transition-all font-body" id="email" name="email" placeholder="name@eagleconcrete.com" required="" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="group">
+<div class="flex justify-between items-end mb-2 ml-1">
+<label class="block font-label text-[10px] font-bold uppercase tracking-widest text-slate-500" for="password">Access Key</label>
+<a class="font-label text-[10px] font-bold uppercase tracking-widest text-[#002868] hover:text-[#D21034] transition-colors" href="#">Forgot Key?</a>
+</div>
+<div class="relative">
+<input class="w-full bg-slate-50 border-slate-200 border rounded-sm px-4 py-4 text-[#002868] placeholder:text-slate-400 focus:ring-1 focus:ring-[#002868] focus:border-[#002868] transition-all font-body" id="password" name="password" placeholder="••••••••••••" required="" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-[#002868]" type="button">
+<span class="material-symbols-outlined text-xl">visibility</span>
+</button>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-2">
+<button class="w-full bg-[#D21034] text-white py-4 rounded-lg font-headline font-bold text-sm uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-[#b00d2b] active:scale-[0.98] transition-all editorial-shadow" type="submit">
+                            Initialize Session
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</form>
+<!-- Secondary Links -->
+<footer class="mt-12 flex flex-col gap-4 border-t border-slate-100 pt-8">
+<div class="flex items-center gap-3 text-slate-500 group cursor-pointer">
+<div class="w-8 h-8 rounded-sm bg-slate-50 flex items-center justify-center group-hover:bg-slate-100 transition-colors">
+<span class="material-symbols-outlined text-sm text-[#002868]">support_agent</span>
+</div>
+<div>
+<p class="font-label text-[10px] font-bold uppercase tracking-widest leading-none mb-1 text-[#002868]">Global Support</p>
+<p class="text-[11px] font-medium text-slate-400">Priority assistance for registered partners</p>
+</div>
+</div>
+<div class="mt-8 flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
+<span>Eagle Concrete Coatings LLC</span>
+<div class="flex gap-4">
+<a class="hover:text-[#D21034] transition-colors" href="#">Terms</a>
+<a class="hover:text-[#D21034] transition-colors" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</main>
+<!-- Global Footer Component -->
+<footer class="w-full mt-auto bg-slate-50 border-t border-slate-200">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:items-start items-center">
+<span class="text-lg font-bold text-[#002868] mb-2">Eagle Concrete</span>
+<p class="font-body text-xs uppercase tracking-widest text-slate-500">© 2024 Eagle Concrete Coatings LLC. Forged in Industrial Strength.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-body text-xs uppercase tracking-widest text-slate-500 hover:text-[#D21034] transition-colors" href="#">Privacy Policy</a>
+<a class="font-body text-xs uppercase tracking-widest text-slate-500 hover:text-[#D21034] transition-colors" href="#">Terms of Service</a>
+<a class="font-body text-xs uppercase tracking-widest text-slate-500 hover:text-[#D21034] transition-colors" href="#">Warranty Info</a>
+<a class="font-body text-xs uppercase tracking-widest text-slate-500 hover:text-[#D21034] transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Password visibility toggle
+    const passwordInput = document.getElementById('password');
+    const toggleButton = passwordInput.nextElementSibling;
+    toggleButton.addEventListener('click', function() {
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            toggleButton.querySelector('span').textContent = 'visibility_off';
+        } else {
+            passwordInput.type = 'password';
+            toggleButton.querySelector('span').textContent = 'visibility';
+        }
+    });
+
+    // Form submission
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        if (email && password) {
+            // No verification, just redirect to home
+            window.location.href = '/index.html';
+        } else {
+            alert('Please fill in all fields.');
+        }
+    });
+});
+</script>
+</body></html>

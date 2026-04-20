@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-highest": "#dce2ed",
+                      "tertiary": "#10181f",
+                      "surface-tint": "#002868",
+                      "secondary-container": "#dae2ff",
+                      "surface-dim": "#d7dadf",
+                      "surface-container-low": "#f1f4f9",
+                      "primary-container": "#d21034",
+                      "surface-variant": "#dfe2eb",
+                      "on-tertiary-fixed-variant": "#3f484f",
+                      "on-tertiary-fixed": "#141d23",
+                      "surface": "#ffffff",
+                      "outline-variant": "#c4c6d2",
+                      "outline": "#747781",
+                      "on-primary-fixed-variant": "#920121",
+                      "on-surface": "#001a40",
+                      "inverse-primary": "#ffb3b3",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#400009",
+                      "inverse-surface": "#2d3135",
+                      "on-primary": "#ffffff",
+                      "on-surface-variant": "#444650",
+                      "error": "#ba1a1a",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-fixed-dim": "#ffb3b3",
+                      "on-tertiary-container": "#8b949d",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#ffdad9",
+                      "tertiary-fixed": "#dbe4ed",
+                      "background": "#ffffff",
+                      "secondary-fixed": "#dae2ff",
+                      "on-secondary-fixed": "#001946",
+                      "surface-container": "#f1f4f9",
+                      "tertiary-container": "#242d34",
+                      "inverse-on-surface": "#eef1f6",
+                      "primary": "#002868",
+                      "secondary": "#D21034",
+                      "on-primary-container": "#ffffff",
+                      "on-secondary-container": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "on-background": "#001a40",
+                      "on-secondary-fixed-variant": "#274484",
+                      "secondary-fixed-dim": "#b1c5ff",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#bfc8d0",
+                      "on-error": "#ffffff",
+                      "surface-bright": "#ffffff",
+                      "surface-container-high": "#e7e9ef"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Public Sans"],
+                      "label": ["Public Sans"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; }
+        .blueprint-grid {
+            background-image: linear-gradient(to right, #002868 1px, transparent 1px),
+                              linear-gradient(to bottom, #002868 1px, transparent 1px);
+            background-size: 24px 24px;
+            opacity: 0.03;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-surface-container-highest no-border">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black font-['Space_Grotesk'] uppercase tracking-tighter text-primary">
+                Eagle Concrete Coatings
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface/70 font-medium hover:text-secondary transition-colors duration-200" href="/index.html">Home</a>
+<a class="text-on-surface/70 font-medium hover:text-secondary transition-colors duration-200" href="/services.html">Services</a>
+<a class="text-primary border-b-2 border-secondary pb-1 font-bold" href="#">Reviews</a>
+<a class="text-on-surface/70 font-medium hover:text-secondary transition-colors duration-200" href="/before-after.html">Gallery</a>
+<a class="text-on-surface/70 font-medium hover:text-secondary transition-colors duration-200" href="/request-quote.html">Request Quote</a>
+<a class="text-on-surface/70 font-medium hover:text-secondary transition-colors duration-200" href="/about-us.html">About Us</a>
+<a class="text-on-surface/70 font-medium hover:text-secondary transition-colors duration-200" href="/login.html">Login</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-bold scale-95 transition-transform duration-150 hover:scale-100 shadow-lg shadow-secondary/20" onclick="window.location.href='/request-quote.html'">
+                Get Quote
+            </button>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden bg-surface">
+<div class="absolute inset-0 blueprint-grid pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
+<div class="md:col-span-7">
+<span class="inline-block py-1 px-3 bg-primary text-on-primary text-xs font-bold tracking-widest uppercase mb-6 rounded-sm">Client Satisfaction Report</span>
+<h1 class="text-6xl md:text-8xl font-bold leading-tight tracking-tighter text-primary mb-8">
+                        FORGED IN <br/> <span class="text-secondary">PRECISION.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl font-light leading-relaxed mb-10">
+                        Our coatings don't just protect floors; they provide a lifetime of architectural permanence. Hear from the property owners who demanded the highest standard in industrial durability.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-2 font-bold font-headline text-2xl text-primary">4.9/5</span>
+</div>
+<p class="text-on-surface-variant font-medium flex items-center">Average Customer Rating from 500+ Projects</p>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500 border-4 border-white">
+<img alt="Professional concrete coating application" class="w-full h-full object-cover transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFRFNaodLLGLPtrUIqKD2A78CRKt8kFl2IlcZ4PeSkIzbNZbaXNVh4TpLok8qkxGJShNpqsBWu0ldU5wouKI2NGJI7axlWypN6B3xaksGyOfoRvwTUc-NMfMQcJ0o5EPediccaRBwsGS8-WDOwOFEoPSUtGOBbe-XnfssDtdz9wDhO3Bz4LLREJmv9HKfeGSJU2roZIyMwTQZkct8ROeyHElg4NO_rfnifGVbwFgD_0tJJNEyctmdEbCTXDYeaSBQ2JFH86mZMx5YZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary/10 z-[-1]"></div>
+</div>
+</div>
+</section>
+<!-- Testimonial Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Project Testimonials</h2>
+<p class="text-on-surface-variant">Real feedback from residential garage transformations to high-traffic industrial warehouses.</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 flex items-center justify-center bg-white text-primary border border-surface-container-highest hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center bg-white text-primary border border-surface-container-highest hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Featured Large Card -->
+<div class="md:col-span-8 bg-white p-8 md:p-12 relative flex flex-col justify-between min-h-[500px] border border-surface-container-highest shadow-sm">
+<div class="absolute top-0 right-0 p-8">
+<span class="text-9xl font-black text-surface-container-highest opacity-50 select-none">“</span>
+</div>
+<div class="relative z-10">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h3 class="text-3xl font-bold mb-6 text-primary">Exceeded every expectation. The craftsmanship is world-class.</h3>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                                "Colton and his crew did a phenomenal job on our shop floor. They were on time, extremely professional, and the attention to detail was incredible. Our floor has never looked better and we couldn't be happier with the result."
+                            </p>
+</div>
+<div class="flex items-center gap-6 mt-12">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold">
+JB
+</div>
+<div>
+<p class="font-bold text-lg text-primary">James Bryant</p>
+<p class="text-sm text-secondary font-semibold tracking-wide uppercase">Custom Shop Owner</p>
+</div>
+</div>
+</div>
+<!-- Medium Card 1 -->
+<div class="md:col-span-4 bg-secondary text-on-secondary p-8 flex flex-col justify-between shadow-lg shadow-secondary/20">
+<div>
+<div class="flex gap-1 mb-6 text-on-secondary/80">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xl font-medium leading-relaxed italic">
+                                "The guys at Eagle were very professional and efficient. They explained the process clearly and delivered exactly what was promised."
+                            </p>
+</div>
+<div class="mt-8 border-t border-white/20 pt-6">
+<p class="font-bold text-lg">Michael Stevens</p>
+<p class="text-xs uppercase tracking-widest opacity-80">Residential Garage Project</p>
+</div>
+</div>
+<!-- Medium Card 2 -->
+<!-- Large Horizontal Card -->
+<div class="md:col-span-12 grid grid-cols-1 md:grid-cols-2 bg-primary text-on-primary overflow-hidden shadow-lg shadow-primary/20">
+<div class="p-10 flex flex-col justify-center">
+<h3 class="text-3xl font-bold mb-4 text-on-primary">Unmatched Industrial Quality</h3>
+<p class="text-xl text-on-primary/90 leading-relaxed mb-6">
+                                "Incredible service and a top-tier product. Eagle Concrete Coatings transformed our warehouse facility with a finish that is as tough as it is beautiful. Five stars all the way."
+                            </p>
+<div>
+<p class="font-bold text-lg">Robert Miller</p>
+<p class="text-sm opacity-70 uppercase tracking-widest">Operations Director</p>
+</div>
+</div>
+<div class="relative h-64 md:h-auto">
+<img alt="High-performance industrial floor" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCL47xEPZitLu9wUqmXwdoB79tl6oUwC4hnJsYRtcfsAEjv3rm1OVwq-x0AJXuo2armRkZ4xal7-kmLF6T7ZNhzLhE8xh51vNKaPRcvb0hPeHAyeomtnEIDPLvOoWY4OLMHNINtKX_JydSoAQRE-XLHz-c9VkFwUiBFlXVfTEpn8vjW4Hfrcu1hV-k3VIPiYTnONcWAC0xtiG4wNrqZKZUmmK-XHLpcTEwBBYPkdxVcmVq5Hi7xQvbNP1YPIsqlAcUVNtrYRatk-Du"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-transparent"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leave a Review CTA -->
+<section class="py-24 relative overflow-hidden bg-white">
+<div class="absolute inset-0 blueprint-grid pointer-events-none opacity-5"></div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<span class="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Share Your Experience</span>
+<h2 class="text-5xl md:text-6xl font-bold text-primary mb-8 tracking-tighter">WAS YOUR PROJECT <span class="text-secondary">EAGLE-CERTIFIED?</span></h2>
+<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto font-light">
+                    Your feedback drives our precision. If we've coated your space, tell us and others about the quality of the craftsmanship.
+                </p>
+<div class="bg-surface-container-low p-1 rounded-lg inline-flex flex-col md:flex-row items-stretch md:items-center gap-4 w-full md:w-auto shadow-inner">
+<button class="bg-primary text-on-primary px-10 py-5 font-bold uppercase tracking-widest hover:bg-secondary transition-all flex items-center justify-center gap-3">
+<span class="material-symbols-outlined">rate_review</span>
+                        Write a Review
+                    </button>
+<button class="px-10 py-5 text-primary border border-primary/10 font-bold uppercase tracking-widest hover:bg-white transition-all flex items-center justify-center gap-3">
+<span class="material-symbols-outlined">photo_camera</span>
+                        Upload Project Photos
+                    </button>
+</div>
+<div class="mt-16 flex justify-center gap-12 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary">verified</span>
+<span class="text-xs font-bold uppercase text-primary">Google Reviews</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary">shield</span>
+<span class="text-xs font-bold uppercase text-primary">Angie's List</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary">construction</span>
+<span class="text-xs font-bold uppercase text-primary">HomeAdvisor</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 bg-primary text-on-primary border-t-4 border-secondary">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold font-['Space_Grotesk'] text-white mb-2 uppercase tracking-tighter">Eagle Concrete Coatings</div>
+<div class="font-['Public_Sans'] text-sm tracking-wide text-white/60">© 2024 Eagle Concrete Coatings LLC. Built for Permanence.</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Public_Sans'] text-sm tracking-wide text-white/60 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Public_Sans'] text-sm tracking-wide text-white/60 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-['Public_Sans'] text-sm tracking-wide text-white/60 hover:text-white transition-colors" href="#">Warranty Details</a>
+<a class="font-['Public_Sans'] text-sm tracking-wide text-white/60 hover:text-white transition-colors" href="#">Service Areas</a>
+</div>
+</div>
+</footer>
+</body></html>
